@@ -1,1 +1,215 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body, #root{
+    width: 100%;
+    height: 100%;
+    max-width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  /* ALTURA DE LINEA*/
+  h1, h2, h3,
+  h4, h5, h6 {
+    line-height: 1;
+  }
+  .text-no-margin {
+    margin: 0px;
+  }
+  /* Contenido principal de la pagina*/
+  .base-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100% !important;
+  }
+  /* Añade el icono de la mano al puntero para seleccion */
+  .hand {
+    cursor: pointer;
+  }
+  /* Margen pequeña*/
+  .small-margin {
+    margin-top: 8px !important;
+  }
+  /* Margen mediana*/
+  .medium-margin {
+    margin-top: 24px !important;
+  }
+  .big-margin {
+    margin-top: 48px !important;
+  }
+  /* Amplitud horizontal al 100% de su contenedor */
+  .full-width {
+    width: 100% !important;
+  }
+  /* Amplitud vertical al 50% de su contenedor */
+  .mid-height {
+    height: 50%;
+  }
+  /* Cover image */
+  .cover-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* Amplitud vertical al 100% de su contenedor */
+  .full-height {
+    height: 100% !important;
+  }
+  /* Centra verticalmente el contenido, se aplica a un subcontenedor */
+  .centered-container {
+    display: flex;
+    align-items: center;
+  }
+  /* Quita el margen interior */
+  .no-padding{
+    padding: 0 !important;
+  }
+  /*Quita elñ margen exterior*/
+  .no-margin{
+    margin: 0 !important;
+  }
+  /* Alinea a la derecha*/
+  .to-right {
+    float: right;
+  }
+  .to-left {
+    float: left;
+  }
+  /* Igual a su contenido*/
+  .to-content {
+    width: max-content; 
+    display: inline-block;
+  }
+  /* Todas las columnas de bootstrap tendran la misma altura, se aplica al contenedor de las columnas, ejemplo la clase row o full-width */
+  .equal {
+    padding-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+
+  
+@font-face {
+    font-family: Raleway-Bold;
+    src: url('./assets/fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url('./assets/fonts/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    src: url('./assets/fonts/gilroy-light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url('./assets/fonts/gilroy-extrabold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: Archer-Light-Pro;
+    src: url('./assets/fonts/Archer-Light-Pro.otf') format('truetype');
+}
+
+@font-face {
+    font-family: Archer-Bold-Pro;
+    src: url('./assets/fonts/Archer-Bold-Pro.otf') format('truetype');
+}
+
+.raleway-bold {
+    font-family: Raleway-Bold !important;
+}
+.raleway-xbold {
+    font-family: Raleway-ExtraBold !important;
+}
+.gilroy-light {
+    font-family: Gilroy-Light !important;
+}
+.gilroy-extrabold {
+    font-family: Gilroy-ExtraBold !important;
+}
+.archer-light {
+    font-family: Archer-Light-Pro !important;
+}
+.archer-bold {
+    font-family: Archer-Bold-Pro !important;
+}
+
+/* COLORES */
+.white {
+  color: #FAFAFA;
+}
+.accent {
+  color: #515151;
+}
+.primary {
+  color: #0097B6;
+}
+.error {
+  color: #9A0000;
+}
+.disabled {
+  color: #C1C1C1;
+}
+.warning {
+  color: #FFBF01;
+}
+
+.action-button {
+  background-color: #0097B6;
+  padding: 16px;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-family: Raleway-Bold;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.action-button:hover:enabled {
+  color: #FFFFFF;
+  background-color: rgb(2, 112, 134);
+}
+.action-button:disabled {
+  border: none;
+  background-color: #515151;
+}
+
+.second-button {
+  background-color: #FFBF01;
+  padding: 16px;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-family: Raleway-Bold;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.second-button:hover:enabled {
+  color: #FFFFFF;
+  background-color: rgb(190, 144, 3);
+}
+.second-button:disabled {
+  border: none;
+  background-color: #515151;
+}
+
+.form-input {
+  width: 100%;
+  min-width: 40% !important;
+  padding: 8px;
+  outline: none !important;
+  border: 1px solid #EAEAEA;
+  transition: all 0.6s ease 0s;
+}
+.form-input:focus {
+  border: 1px solid #00A5B4;
+}

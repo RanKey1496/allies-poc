@@ -1,0 +1,28 @@
+.main-header {
+    height: 60px;
+    border-bottom: solid 2px #DEDEDE;
+}
+
+.nav-item {
+    padding: 2px;
+    margin-left: 45px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-right-item {
+    margin-right: 45px;
+}
+
+.nav-button-rounded {
+    color: #0097B6 !important;
+    border: 2px solid #0097B6;
+    border-radius: 10px;
+}
+
+.nav-button-rounded:hover {
+    color: rgb(2, 112, 134) !important;
+    border: 2px solid rgb(2, 112, 134);
+}

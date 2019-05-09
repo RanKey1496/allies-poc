@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top main-header">
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/shared/header/logo.png" width="30" height="30" alt="">
+    </a>
+  </nav>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link raleway-bold" routerLink="/home">Arrendar</a>
+      </li>
+      <li class="nav-item raleway-bold">
+        <a class="nav-link" routerLink="/contact-list">Comprar</a>
+      </li>
+      <li class="nav-item raleway-bold">
+        <a class="nav-link" routerLink="/contact-create">Contacto</a>
+      </li>
+      <li class="nav-item raleway-bold">
+        <a class="nav-link" routerLink="/contact-create">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item raleway-bold">
+        <a class="nav-link" routerLink="/contact-create">Blog</a>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="nav.visible" class="navbar-collapse collapse order-3">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item nav-right-item raleway-bold">
+              <a class="nav-link nav-button-rounded" href="/login">Cerrar Sesión</a>
+          </li>
+      </ul>
+  </div>
+</nav>
